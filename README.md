@@ -52,7 +52,7 @@ I studied the `setInterval()` function for some more time to understand how the 
 
 With both of these being met, the user would be greeted with the congratulatory message.
 
-The runes array would be filled with data upon the X being placed at the right set of coordinates. I pieced together the fact that the coordinates could represent the ASCII values of each character in the string. The fact that the length of string was an odd number through me off as coordinates required an x and y value, but I started testing. To my surprise, the first set of characters and coordinates worked and my runes array had a new entry. I continued to match coordinates with the ASCII values until my runes array was greater than 2.
+The runes array would be filled with data upon the X being placed at the right set of coordinates. I pieced together the fact that the coordinates could represent the ASCII values of each character in the string. The fact that the length of string was an odd number threw me off as coordinates required an x and y value, but I started testing. To my surprise, the first set of characters and coordinates worked and my runes array had a new entry. I continued to match coordinates with the ASCII values until my runes array was greater than 2.
 
 The ASCII values for the characters in LAMBERT:
 - L: 76
@@ -81,12 +81,8 @@ Matching ASCII values to coordinates of X:
     // Outputs: ['alpha', 'beta', 'gamma']
    ```
 - Move "X" to (x: 84, y:0) for 'T'
-   ```javascript
-    runes
-    // Outputs: ['alpha', 'beta', 'gamma']
-   ```
 
-It seemed that the last set of coordinates weren't need as the runes array was at a length of 3 which is greater than 2. However, after doing all of this, it seemed that the congradulatory message didn't pop up. I made sure the runes array was greater than 2, which it was, and checked on the `tt` variable to see if it equaled 469. The `tt` variable was greater than 469 which caused the conditional to fail. I believe that the check of the ASCII sum wasn't fine tuned for the 'LAMBERT' string as adding all the values would give a value of 519 which is no equal to 469. 
+It seemed that the last set of coordinates weren't need as the runes array was already at a length of 3 which is greater than 2. However, after doing all of this, it seemed that the congradulatory message didn't pop up. I made sure the runes array was greater than 2, which it was, and checked on the `tt` variable to see if it equaled 469. The `tt` variable was greater than 469 which caused the conditional to fail. I believe that the check of the ASCII sum wasn't fine tuned for the 'LAMBERT' string as adding all the values would give a value of 519 which is no equal to 469, and no combinations of the ASCII values would result in a value of 469.
 
 Through this, I decided to change the conditional of the `tt` variable so that it would return true if the ASCII value is greater than or equal to 469:
 `tt == 469;` to `tt >= 469;`
