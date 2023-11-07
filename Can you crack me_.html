@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                font-family:'Courier';
+            }
+
+            #c {
+                width:720px;
+            }
+
+            #canary {
+                position: absolute;
+                z-index: 9;
+                background-color: #f1f1f1;
+                border: 1px solid #d3d3d3;
+                text-align: center;
+            }
+        </style>
+        <title>Can you crack me?</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26894442-4"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-26894442-4');
+        </script>
+        <script type="text/javascript">
+
+            let runes = [];
+            let ee = eval("\145\x76" + atob("yw".toUpperCase() + "w=")), b = atob;
+
+            let spikes = ["ymF2aWdhdG9b", "0XNlckFnZW5d", "=W5kZXhPZg=a", "=EFNQkVSVA=T", "ZklQTEVU", "=UxERVJTT04Q", "=kxBQ0tTRUEQ", "yGlZ", "=2xlYXIY", "=2x1ZQ=Y", "52FuYXJY", "=WxwaGEY", "=mV0YQ=Y", "=2FtbWEZ"]
+
+            let tY = (function(){
+                function n(s){
+                    bb = s[0], nn = s[s.length-1];
+                    return nn + s.substring(1, s.length-1) + bb;
+                }
+                return n;
+            })()
+                
+            let clue = (function(){
+                if (window[b(tY(spikes[0x00]))][b(tY(spikes[0x01]))].indexOf(b(tY(spikes[0x06]))) == 9){
+                    return b(tY(spikes[0x04]));
+                } else {
+                    return b(tY(spikes[0x03])); 
+                }; 
+            })();
+
+            var el = new Image();
+            Object.defineProperty(el, 'id', {
+                get: function () {
+                    clue = b(tY(spikes[0x05]));
+                }
+            });         
+            requestAnimationFrame(function check() {
+                console.dir(el);
+                console.clear();
+                requestAnimationFrame(check);
+            });           
+
+            setInterval(() => {
+                // ee('dLb'.replace('L', 'e') +'ug' + '14r'.replace('14', 'ge'));
+                if (runes.length > 2 && (function (targ) {
+                                            tt = 0;
+                                            for (i = 0; i < targ.length; i++) {
+                                                tt += targ.charCodeAt(i);
+                                            }
+                                            return tt >= 469;
+                                        })(clue)){
+
+                    ee(b("YWxlcn"+"QoIkNvbmdy"+"YXR1bGF0aW9uc"+"yBPaCAxMzM3I"+"E9uZSEgWW91IGh"+"hdmUgZm91bmQgbXkg"+"dHJlYXN1cmUhIik="));
+                    
+                    runes=[];
+                }
+            }, 2000);
+
+            function stage(){
+                document.location.hash='';
+                d(document.getElementById("c"+"an"+"ar"+"y"));
+            }
+
+            function IChing(x,y){
+                document.getElementById("gps").innerHTML = y.toString() + "," + x.toString();
+                if (y == clue.charCodeAt(0) && x == clue.charCodeAt(1) && !runes.length){
+                    runes.push(b(tY(spikes[11])));
+                } else if (y == clue.charCodeAt(2) && x == clue.charCodeAt(3) && runes.length == 1){
+                    runes.push(b(tY(spikes[12])));
+                } else if (y == clue.charCodeAt(4) && x == clue.charCodeAt(5) && runes.length == 2){
+                    runes.push(b(tY(spikes[13])));
+                }
+            }
+            
+           function d(e) { 
+               var n = 0, t = 0, o = 0, u = 0; function d(e) { (e = e || window.event).preventDefault(), o = e.clientX, u = e.clientY, document.onmouseup = c, document.onmousemove = l } function l(d) { (d = d || window.event).preventDefault(), n = o - d.clientX, t = u - d.clientY, o = d.clientX, u = d.clientY, e.style.top = e.offsetTop - t + "px", e.style.left = e.offsetLeft - n + "px", IChing(u, o) } function c() { document.onmouseup = null, document.onmousemove = null } document.getElementById(e.id + "header") ? document.getElementById(e.id + "header").onmousedown = d : e.onmousedown = d 
+               }
+        </script>
+    </head>
+    <body onload="stage()">
+        <div id="c">
+            <hr>
+            The notorious pirate Captain Platinumbeard ravaged the high seas for decades. 
+            <br><br>
+            After every plunder, he stashed his booty in a hidden alcove on a tropical isle. 
+            <br><br>
+            Confined to his death bed after falling ill due to scurvy, he spent his last living hours coding a cryptic map in the hope a 1337 adventurer would one day come and find the treasure. 
+            <br><br>
+            Can you solve the mystery of Captain Platinumbeard and find the hidden riches?
+            <hr>
+            Remember: 
+            <br><br>
+            <div id="canary">X</div>&nbsp;&nbsp;&nbsp;&nbsp;marks the spot.
+            <br><br>
+            <hr>
+            <div id="gps"></div>
+        </div>
+    </body>
+</html>
