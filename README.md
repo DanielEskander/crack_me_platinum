@@ -23,9 +23,7 @@ alert("Congratulations Oh 1337 One! You have found my treasure!")
 
 The alert upon completing the task:
 
-
 ![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/89ab4cf3-dc77-4455-87f9-01d76b226de9)
-
 
 ### 2. Downloading the HTML File
 One of the first hurdles I faced was the fact that I was unable to alter any of the Javascript code due to the debuggger being lauched every 2 seconds, halting the code execution when detecting DevTools being used. So, before attempting to complete the puzzle, I downloaded the HTML file, so I could change the Javascript locally.
