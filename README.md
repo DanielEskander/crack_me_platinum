@@ -21,6 +21,8 @@ This message translated to:
 alert("Congratulations Oh 1337 One! You have found my treasure!")
 ```
 
+
+
 The alert upon completing the task:
 
 ![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/89ab4cf3-dc77-4455-87f9-01d76b226de9)
