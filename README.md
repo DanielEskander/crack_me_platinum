@@ -49,6 +49,7 @@ Now that I could use DevTools and the coordinates of the X, I could use the debu
 I studied the `setInterval()` function for some more time to understand how the conditional would work. I found out that the conditional would make two checks:
 - The length of runes array must be greater than 2.
 - The sum of ASCII values in the clue must be equal to 469 (modified later, see below).
+
 With both of these being met, the user would be greeted with the congratulatory message.
 
 The runes array would be filled with data upon the X being placed at the right set of coordinates. I pieced together the fact that the coordinates could represent the ASCII values of each character in the string. The fact that the length of string was an odd number through me off as coordinates required an x and y value, but I started testing. To my surprise, the first set of characters and coordinates worked and my runes array had a new entry. I continued to match coordinates with the ASCII values until my runes array was greater than 2.
