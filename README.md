@@ -1,5 +1,4 @@
-### Confiant Technical Assessment 
-https://crackme.s3.amazonaws.com/crack_me_platinum.html
+### CrackMeAssessment
 
 My solution to this puzzle included many steps:
 
