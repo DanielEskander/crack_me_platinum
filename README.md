@@ -25,7 +25,7 @@ alert("Congratulations Oh 1337 One! You have found my treasure!")
 
 The alert upon completing the task:
 
-![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/89ab4cf3-dc77-4455-87f9-01d76b226de9)
+![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/a7ff2069-8627-4008-b4fa-94fec84218bf)
 
 ### 2. Downloading the HTML File
 One of the first hurdles I faced was the fact that I was unable to alter any of the Javascript code due to the debuggger being lauched every 2 seconds, halting the code execution when detecting DevTools being used. So, before attempting to complete the puzzle, I downloaded the HTML file, so I could change the Javascript locally.
@@ -90,5 +90,6 @@ Through this, I decided to change the conditional of the `tt` variable so that i
 `tt == 469;` to `tt >= 469;`
 With this change, I was met with the congradulatory message:
 
-![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/5d9990b4-d445-4671-ac31-27bc40bc9d64)
+![image](https://github.com/DanielEskander/crack_me_platinum/assets/55925126/c0e44a2c-1df8-4aa7-99da-0afae4221d4a)
+
   
